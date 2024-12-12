@@ -1,0 +1,71 @@
+/* Custom styles for improved responsiveness */
+
+.hero-section {
+    background-image: url('images/outers-premium-outdoor-furniture-living-space.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Improve readability on smaller screens */
+@media (max-width: 576px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Add some padding to the main content on larger screens */
+@media (min-width: 992px) {
+    main {
+        padding-top: 2rem;
+    }
+}
+
+/* Ensure buttons are easily tappable on mobile */
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+/* Improve spacing on mobile */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
